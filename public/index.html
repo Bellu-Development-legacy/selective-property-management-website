@@ -18,10 +18,11 @@
             grecaptcha.execute('6Le_38sZAAAAAAl7bTNVFWg1myKJYP5ja9yQDzKn', {action:'validate_captcha'})
               .then(function(token) {
               // document.getElementById('g-recaptcha-response').value = token;
-              var els = document.querySelectorAll('.g-recaptcha-response');
-              els.forEach(function (el, key) {
-                els[key].value = token;
-              });
+              var els = document.getElementsByClassName('g-recaptcha-response');
+
+              for (var i = 0; i < els.length; i++) {
+                els[i].value = token;
+              }
             });
         });
     </script>
