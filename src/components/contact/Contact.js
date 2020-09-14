@@ -9,7 +9,7 @@ export default function Contact() {
         <h3>Reach out</h3>
         <div className="contact-map">
           <div className="contact-box">
-            <form action="http://localhost:3000/forms" method="POST">
+            <form action="https://forms.selectivepropertymanagement.com" method="POST">
               <div className="fields">
                 <input type="hidden" className="g-recaptcha-response" name="g-recaptcha-response" />
                 <input type="hidden" name="action" value="validate_captcha" />
