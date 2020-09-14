@@ -6,6 +6,7 @@ nav {
   z-index: 1000;
   transition: background 200ms ease, backdrop-filter 200ms ease;
   &.scrolled {
+    background: rgb(47, 47, 47); // Backup
     background: rgba(47, 47, 47, 0.81);
     backdrop-filter: blur(20px);
   }
