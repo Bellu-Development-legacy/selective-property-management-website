@@ -10,11 +10,8 @@ import "typeface-eb-garamond";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Page from "./pages/Page"
-<<<<<<< HEAD
 import Failure from "./pages/Failure";
 import Thanks from "./pages/Thanks";
-=======
->>>>>>> 66cf1064c54cd6b6b0eb4bdc866c0c4174c8e13e
 
 export default function App() {
   const pages = pageData.pages.map(page => <Route key={page.route} path={page.route} children={<Page />} />);
@@ -24,15 +21,12 @@ export default function App() {
         <Index />
       </Route>
       {pages}
-<<<<<<< HEAD
       <Route path="/thank-you">
         <Thanks />
       </Route>
       <Route path="/form-failure">
         <Failure />
       </Route>
-=======
->>>>>>> 66cf1064c54cd6b6b0eb4bdc866c0c4174c8e13e
       <Route path="*">
         <NotFound />
       </Route>
