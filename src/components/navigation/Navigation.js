@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <nav className={`${navigation} ${menu ? "open" : "close"}`}>
       <div className="contain">
-        <img src={logo} alt="Selective Property Management" className="logo" />
+        <Link to="/"><img src={logo} alt="Selective Property Management" className="logo" /></Link>
         <button
           className={`nav-btn ${menu ? "close" : "open"}`}
           onClick={toggleNav}
@@ -42,42 +42,42 @@ export default function Navigation() {
             <a className="no-anim">Services</a>
             <ul>
               <li>
-                <a href="/services/administration">Administration</a>
+                <Link to="/services/administration">Administration</Link>
               </li>
               <li>
-                <a href="/services/accounting-reporting">Accounting &amp; Reporting</a>
+                <Link to="/services/accounting-reporting">Accounting &amp; Reporting</Link>
               </li>
               <li>
-                <a href="/services/maintenance">Maintenance</a>
+                <Link to="/services/maintenance">Maintenance</Link>
               </li>
               <li>
-                <a href="/services/homeowners-associations">Homeowner's Associations</a>
+                <Link to="/services/homeowners-associations">Homeowner's Associations</Link>
               </li>
               <li>
-                <a href="/services/condominium-management">Condominium Management</a>
+                <Link to="/services/condominium-management">Condominium Management</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/testimonials">Testimonials</a>
+            <Link to="/testimonials">Testimonials</Link>
           </li>
           <li className="drop-down right">
             <a className="no-anim">Forms</a>
             <ul>
               <li>
-                <a href="/forms/rules-regulations">Rules &amp; Regulations Request</a>
+                <Link to="/forms/rules-regulations">Rules &amp; Regulations Request</Link>
               </li>
               <li>
-                <a href="/forms/condominium-documents">Condominum Documents Request</a>
+                <Link to="/forms/condominium-documents">Condominum Documents Request</Link>
               </li>
               <li>
-                <a href="/forms/insurance-certificate">Insurance Certificate Request</a>
+                <Link to="/forms/insurance-certificate">Insurance Certificate Request</Link>
               </li>
               <li>
-                <a href="/forms/submit-maintenance">Submit Maintenance Request</a>
+                <Link to="/forms/submit-maintenance">Submit Maintenance Request</Link>
               </li>
               <li>
-                <a href="/forms/resale-certificate">Resale Certificate Request</a>
+                <Link to="/forms/resale-certificate">Resale Certificate Request</Link>
               </li>
             </ul>
           </li>
