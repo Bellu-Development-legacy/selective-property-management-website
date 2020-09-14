@@ -10,5 +10,20 @@
   <body>
     <noscript>You need to enable JavaScript to view this website.</noscript>
     <div id="root"></div>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le_38sZAAAAAAl7bTNVFWg1myKJYP5ja9yQDzKn"></script>
+    <script>
+        grecaptcha.ready(function() {
+        // do request for recaptcha token
+        // response is promise with passed token
+            grecaptcha.execute('6Le_38sZAAAAAAl7bTNVFWg1myKJYP5ja9yQDzKn', {action:'validate_captcha'})
+              .then(function(token) {
+              // document.getElementById('g-recaptcha-response').value = token;
+              var els = document.querySelectorAll('.g-recaptcha-response');
+              els.forEach(function (el, key) {
+                els[key].value = token;
+              });
+            });
+        });
+    </script>
   </body>
 </html>
