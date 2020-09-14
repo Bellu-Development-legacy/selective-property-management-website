@@ -4,6 +4,7 @@ import "./contact.scss";
 
 export default function Contact() {
   return (
+  
     <section className="contact">
       <div className="contain">
         <h3>Reach out</h3>
