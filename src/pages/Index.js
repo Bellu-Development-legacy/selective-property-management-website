@@ -9,8 +9,8 @@ import Testimonials from "../components/testimonials/Testimonials";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 
-import BeachImage from "../assets/images/beach.jpeg";
-import CastleImage from "../assets/images/castle.jpeg";
+import Prop1 from "../assets/images/property1.jpg";
+import Prop2 from "../assets/images/property2.jpg";
 
 export default function Index() {
   return (
@@ -21,13 +21,13 @@ export default function Index() {
         position="right"
         heading="Experience, Dedication and Personalization"
         text="With well over 30 total years of experience in property management, dedicated solely to condominiums(residential and commercial), Selective Property Management will alleviate the pressures and time-consuming tasks associated with managing your property."
-        image={CastleImage}
+        image={Prop1}
       />
       <ImageSection
         position="left"
         heading="Limitless Maintenance Capabilities"
         text="A full complement of insured landscapers, snow removal firms, and insured, trained technicians for physical plant operations (ex.: pump stations, ejector stations, sewerage, electrical, plumbing, sprinkler systems, pool, etc.) all operating as sub-contractors is available. "
-        image={BeachImage}
+        image={Prop2}
         className="bottom-spacing"
       />
       <Testimonials />
